@@ -1,0 +1,38 @@
+<?php include 'database.' ;?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>SHOUT IT! ShoutBox</h1>
+    </header>
+
+    <div id="shouts">
+      <ul>
+        <li class="shout"><span>10:15PM - </span>Brad: Hey waht are you guys up to?</li>
+        <li class="shout"><span>10:15PM - </span>Brad: Hey waht are you guys up to?</li>
+        <li class="shout"><span>10:15PM - </span>Brad: Hey waht are you guys up to?</li>
+        <li class="shout"><span>10:15PM - </span>Brad: Hey waht are you guys up to?</li>
+        <li class="shout"><span>10:15PM - </span>Brad: Hey waht are you guys up to?</li>
+      </ul>
+    </div>
+
+    <div class="input">
+      <form action="process.php" method="post">
+        <input type="text" tyope="text" name="user" placeholder="Enter Your Name" />
+        <input type="text" tyope="text" name="message" placeholder="Enter A Message" />
+        <br />
+        <input type="submit" class="shout-btn" name="submit" value="Shout It Out">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
